@@ -25,6 +25,8 @@ function angkaPrima(angka) {
     }
     if(arrFaktor.length>2){
         var prima=false
+    }else if(arrFaktor.length==1){
+        prima=false
     }else{
         prima=true
     }
