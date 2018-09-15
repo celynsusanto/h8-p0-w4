@@ -8,15 +8,6 @@
 Platinum Fox: { firstName: 'Platinum', lastName: 'Fox', gender: 'female', age: 23 }
 John Doe: { firstName: 'John', lastName: 'Doe', gender: 'male', age: 18 }*/
 
-//1. Masuk kedalam fungsi
-//2. Buat variable 'year' dengan nilai tahun sekarang
-//3. Buat variable 'no' dengan nilai 0
-//4. Buat perulangan dengan variable 'i' dengan nilai 0 dan batas panjang 'arr'
-//  4.a. Tambah nilai 'i' dengan 1 pada tiap perulangan
-//  4.b. Tampilkan 'no' dan nama yang terdapat pada 'arr'
-//  4.c. Buat variable 'object' dengan nilai object kosong
-//  4.d. Pada 'arr' 'i' di index ke 0 masukkan kedalam 'object' dengan keyname 'firstName' dan nilai dari 'arr' tersebut
-//  4.e. Lanj
 
 
 function changeMe(arr) {
