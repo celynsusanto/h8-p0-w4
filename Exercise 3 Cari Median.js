@@ -16,16 +16,16 @@
 //6.Kembalikan nilai 'median'
 //7.Selesai
 
-function cariMedian(arr){
-    var median=0
-    var arrSort=arr.sort(function(a, b){return a-b})
-    var panjangArr=arrSort.length
-    if(arrSort.length%2!==0){
-        median=arrSort[Math.floor(panjangArr/2)]
-    }else if(arrSort.length%2===0){
-        var nilaiAtas=arrSort[panjangArr/2]
-        var nilaiBawah=arrSort[(panjangArr/2)-1]
-        median=(nilaiBawah+nilaiAtas)/2
+function cariMedian(arr) {
+    var median = 0
+    var arrSort = arr.sort(function (a, b) { return a - b })
+    var panjangArr = arrSort.length
+    if (arrSort.length % 2 !== 0) {
+        median = arrSort[Math.floor(panjangArr / 2)]
+    } else if (arrSort.length % 2 === 0) {
+        var nilaiAtas = arrSort[panjangArr / 2]
+        var nilaiBawah = arrSort[(panjangArr / 2) - 1]
+        median = (nilaiBawah + nilaiAtas) / 2
     }
     return median
 

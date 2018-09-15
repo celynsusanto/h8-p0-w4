@@ -1,10 +1,10 @@
-function tukarBesarKecil(kalimat){
-    var kalimatBaru=""
-    for(i=0; i<=kalimat.length-1; i++){
-        if(kalimat[i]===kalimat[i].toUpperCase()){
-            kalimatBaru=kalimatBaru+kalimat[i].toLowerCase()
-        }else if(kalimat[i]===kalimat[i].toLowerCase()){
-            kalimatBaru=kalimatBaru+kalimat[i].toUpperCase()
+function tukarBesarKecil(kalimat) {
+    var kalimatBaru = ""
+    for (i = 0; i <= kalimat.length - 1; i++) {
+        if (kalimat[i] === kalimat[i].toUpperCase()) {
+            kalimatBaru = kalimatBaru + kalimat[i].toLowerCase()
+        } else if (kalimat[i] === kalimat[i].toLowerCase()) {
+            kalimatBaru = kalimatBaru + kalimat[i].toUpperCase()
         }
     }
     return kalimatBaru

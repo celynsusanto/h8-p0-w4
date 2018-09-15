@@ -14,14 +14,14 @@ function hitungHuruf(kata) {
     var kataSplit = kata.split(" ")
     console.log(kataSplit)
 
-  
+
     // for(var i=0; i<=kataSplit.length-1; i++){
     //     console.log(kataSplit[i])
     // }
-        // for(var j=0; j<=kataSplit[i].length-1; j++){
-        //         console.log(kataSplit[i][j])
-        //     }
-        
+    // for(var j=0; j<=kataSplit[i].length-1; j++){
+    //         console.log(kataSplit[i][j])
+    //     }
+
     // for(var j=0; j<=kataSplit[i].length-1; j++){
 
     //         for(var k=1; k<kataSplit[i].length; k++){
@@ -29,11 +29,11 @@ function hitungHuruf(kata) {
     //                 hasil.push(kataSplit[i][k])
     //             }
     //         }
-            
-        // }
-    
 
-  
+    // }
+
+
+
 }
 
 // TEST CASES

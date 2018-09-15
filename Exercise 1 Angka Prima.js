@@ -18,17 +18,17 @@
 
 function angkaPrima(angka) {
     var arrFaktor = []
-    for(var i=1; i<=angka; i++){
-        if(angka%i==0){
+    for (var i = 1; i <= angka; i++) {
+        if (angka % i == 0) {
             arrFaktor.push(i)
         }
     }
-    if(arrFaktor.length>2){
-        var prima=false
-    }else if(arrFaktor.length==1){
-        prima=false
-    }else{
-        prima=true
+    if (arrFaktor.length > 2) {
+        var prima = false
+    } else if (arrFaktor.length == 1) {
+        prima = false
+    } else {
+        prima = true
     }
     return prima
 }
