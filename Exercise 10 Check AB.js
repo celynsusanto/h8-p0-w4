@@ -18,7 +18,7 @@ function checkAB(str) {
         if (str[i] === "b") {
             b.push(i)
         }
-    } return b
+    } return a
 
     // if(Math.abs(a-b)>=3 && b!==0-1 && a!==-1){
     //     return true

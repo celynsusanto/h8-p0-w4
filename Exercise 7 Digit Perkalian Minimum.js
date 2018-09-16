@@ -3,24 +3,22 @@
 
 function digitPerkalianMinimum(angka) {
     var faktor = []
-    for (var i = 0; i <= angka; i++) {
-        if (angka % i === 0) {
-            faktor.push(i)
+    var str=""
+    for(i=0; i<=angka; i++){
+        for(j=0; j<=angka; j++){
+            if(i*j===angka){
+                str=i.toString()+j.toString()
+                faktor.push(str)
+            }
         }
     }
-    var pFaktor = Math.floor(faktor.length / 2)
-    var faktor1 = faktor.slice(0, pFaktor)
-    var faktor2 = faktor.slice(pFaktor)
-    var faktorBaru = []
-
-    for (i = faktor2.length - 1; i >= 0; i--) {
-        var faktor3 = ""
-        for (j = 0; j <= faktor1.length - 1; j++) {
-
+    var digit=faktor[0].length
+    for(i=0; i<=faktor.length-1; i++){
+        if(digit>faktor[i].length){
+            digit=faktor[i].length
         }
-        faktor2Baru[i].push(faktor1[j])
     }
-    return faktor2Baru
+    return digit
 }
 
 console.log(digitPerkalianMinimum(24)); //2

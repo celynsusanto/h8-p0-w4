@@ -72,8 +72,8 @@ function passwordGenerator(name) {
     var strReverse = reverseWord(strVocals);
     var strSwitch = setLowerUpperCase(strReverse);
     var strRemove = removeSpaces(strSwitch);
-    if(name.length<5){
-        strRemove='Minimal karakter yang diinputkan adalah 5 karakter'
+    if (name.length < 5) {
+        strRemove = 'Minimal karakter yang diinputkan adalah 5 karakter'
     }
 
     return strRemove
@@ -81,6 +81,6 @@ function passwordGenerator(name) {
 }
 
 console.log(passwordGenerator('Sergei Dragunov')); // 'VPNVGBRdJFGRFs'
-  console.log(passwordGenerator('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
-  console.log(passwordGenerator('Alexei')); // 'JFXFLb'
-  console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan adalah 5 karakter'
+console.log(passwordGenerator('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
+console.log(passwordGenerator('Alexei')); // 'JFXFLb'
+console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan adalah 5 karakter'
