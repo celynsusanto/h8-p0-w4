@@ -2,29 +2,16 @@
 //true jika ada a dan b DAN jarak 3 karakter lain min satu kali
 //jika tidak ditemukan kembalikan false
 function checkAB(str) {
-    var a = []
-    var b = []
-
-
+    var a = "a"
+    var b = "b"
     for (i = 0; i <= str.length - 1; i++) {
-
-        if (str[i] === "a") {
-            a.push(i)
+        if (str[i] === a && str[i + 4] === b) {
+            return true
+        } else if (str[i] === b && str[i + 4] === a) {
+            return true
         }
-
     }
-    for (i = 0; i < str.length - 1; i++) {
-
-        if (str[i] === "b") {
-            b.push(i)
-        }
-    } return a
-
-    // if(Math.abs(a-b)>=3 && b!==0-1 && a!==-1){
-    //     return true
-    // }else{
-    //     return false
-    // }
+    return false
 }
 console.log(checkAB('lane borrowed'));
 console.log(checkAB('i am sick')); // false
