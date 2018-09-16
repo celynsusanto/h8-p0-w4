@@ -3,19 +3,19 @@
 
 function digitPerkalianMinimum(angka) {
     var faktor = []
-    var str=""
-    for(i=0; i<=angka; i++){
-        for(j=0; j<=angka; j++){
-            if(i*j===angka){
-                str=i.toString()+j.toString()
+    var str = ""
+    for (i = 0; i <= angka; i++) {
+        for (j = 0; j <= angka; j++) {
+            if (i * j === angka) {
+                str = i.toString() + j.toString()
                 faktor.push(str)
             }
         }
     }
-    var digit=faktor[0].length
-    for(i=0; i<=faktor.length-1; i++){
-        if(digit>faktor[i].length){
-            digit=faktor[i].length
+    var digit = faktor[0].length
+    for (i = 0; i <= faktor.length - 1; i++) {
+        if (digit > faktor[i].length) {
+            digit = faktor[i].length
         }
     }
     return digit

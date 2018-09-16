@@ -6,7 +6,7 @@
 function hitungHuruf(kata) {
     var kataSplit = kata.split(" ")
     // console.log(kataSplit)
-    
+
     for (i = 0; i <= kataSplit.length - 1; i++) {
         for (j = 0; j < kataSplit[i].length; j++) {
             if (kataSplit[i].lastIndexOf(kataSplit[i][j]) !== kataSplit[i].indexOf(kataSplit[i][j])) {
