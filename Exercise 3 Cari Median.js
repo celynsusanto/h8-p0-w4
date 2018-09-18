@@ -18,13 +18,12 @@
 
 function cariMedian(arr) {
     var median = 0
-    var arrSort = arr.sort(function (a, b) { return a - b })
-    var panjangArr = arrSort.length
-    if (arrSort.length % 2 !== 0) {
-        median = arrSort[Math.floor(panjangArr / 2)]
-    } else if (arrSort.length % 2 === 0) {
-        var nilaiAtas = arrSort[panjangArr / 2]
-        var nilaiBawah = arrSort[(panjangArr / 2) - 1]
+    var panjangArr = arr.length
+    if (arr.length % 2 !== 0) {
+        median = arr[Math.floor(panjangArr / 2)]
+    } else if (arr.length % 2 === 0) {
+        var nilaiAtas = arr[panjangArr / 2]
+        var nilaiBawah = arr[(panjangArr / 2) - 1]
         median = (nilaiBawah + nilaiAtas) / 2
     }
     return median
