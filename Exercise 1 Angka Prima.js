@@ -9,7 +9,7 @@
 //3. Lakukan perulangan terhadap'i' dimana nilainya adalah 1, dan dengan batas 'angka' tersebut (karena faktor tidak akan melebihi 'angka' itu sendiri)
 //4. Masukkan kondisi kedalam perulangan dimana Jika 'angka' modulus 'i' sama dengan 0, maka masukkan 'i' kedalam 'arrFaktor'
 //5. Perulangan selesai
-//6. Buat kondisi baru dimana Jika panjang dari 'arrFaktor' lebih dari 2 maka 'angka' tersebut bukan bilangan prima dan tampilkan 'prima' dengan nilai false
+//6. Buat kondisi baru dimana Jika panjang dari 'arrFaktor' lebih dari 2 ATAU panjang dari 'arrFaktor' kurang dari 2 maka 'angka' tersebut bukan bilangan prima dan tampilkan 'prima' dengan nilai false
 //7. Jika tidak memenuhi kondisi diatas maka 'angka' merupakan bilangan prima dan tampilkan 'prima' dengan nilai true
 //8. Kondisi selesai
 //9. Kembalikan hasil 'prima'
