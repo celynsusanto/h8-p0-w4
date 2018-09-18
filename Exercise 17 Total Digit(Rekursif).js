@@ -2,16 +2,17 @@
 function totalDigitRekursif(angka)
 return nilai dr total digit tsb dr dpn ke blkg
 */
-function totalDigitRekursif(angka){
-    var index=0
-    var total=""
-    var angkaStr=''
-    angkaStr=angkaStr+angka
-    if(index>=angkaStr.length-1){
-        return angka
-    }else{
-        return totalDigitRekursif(angkaStr[index]+angkaStr[index+1])
-    }
+function totalDigitRekursif(angka) {
+  var index = 0;
+  var jumlah = 0;
+  if (index===angka.toString().length-1) {
+    jumlah = jumlah + parseInt(angka.toString()[index]);
+    return jumlah;
+  } else {
+    jumlah = jumlah + parseInt(angka.toString()[index]);
+    index++;
+    return jumlah + totalDigitRekursif(angka.toString().length--);
+  }
 }
 
 console.log(totalDigitRekursif(512)); // 8

@@ -23,10 +23,8 @@ function angkaPrima(angka) {
             arrFaktor.push(i)
         }
     }
-    if (arrFaktor.length > 2) {
+    if (arrFaktor.length > 2 || arrFaktor.length<2) {
         var prima = false
-    } else if (arrFaktor.length == 1) {
-        prima = false
     } else {
         prima = true
     }
@@ -38,3 +36,5 @@ console.log(angkaPrima(7)); // true
 console.log(angkaPrima(6)); // false
 console.log(angkaPrima(23)); // true
 console.log(angkaPrima(33)); // false
+
+

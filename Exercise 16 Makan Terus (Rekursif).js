@@ -22,7 +22,7 @@ function makanTerusRekursif(waktu) {
     if (waktu <= 0) {
         return 0
     } else {
-        return counter + makanTerusRekursif(waktu - proses)
+        return counter+makanTerusRekursif(waktu-proses)
     }
 }
 
