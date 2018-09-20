@@ -7,30 +7,24 @@
 //jika hanya ada satu nilai yang sama return -1
 
 function cariModus(arr) {
-    var temp = []
-    var index = 0
-    var modus = -1
-    var arrSort = arr.sort(function (a, b) { return a - b })
-    for (i = 0; i < arrSort.length; i++) {
-        if (temp.length === 0) {
-            temp.push([arrSort[i]])
-        } else if (arrSort[index] === arrSort[i]) {
-            temp[index].push(arrSort[i])
-        } else {
-            temp.push([arrSort[i]])
-            index = index + 1
-        }
+  var temp = {};
+  var modus = -1;
+  for (i = 0; i <= arr.length - 1; i++) {
+    if (temp[arr[i]] == undefined) {
+      temp[arr[i]] = 1;
+    } else {
+      temp[arr[i]] += 1;
     }
-    for (i = 0; i < temp.length; i++) {
-        if (temp.length === 1) {
-            modus = -1
-        } else if (temp[i].length >= 2) {
-            modus = temp[i][0]
-        }
-
+  }
+  for (i = 0; i <= arr.length - 1; i++) {
+    if (temp[arr[i]] > 1 && temp[arr[i]] !== arr.length) {
+      modus = arr[i];
+    } else if (temp[arr[i]] === arr.length) {
+      modus = -1;
     }
+  }
 
-    return modus
+  return modus;
 }
 
 console.log(cariModus([10, 4, 5, 2, 4])); // 4
