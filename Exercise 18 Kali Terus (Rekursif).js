@@ -3,13 +3,13 @@
 //jika masih lebih dari satu digit lakukan perkalian disetiap digit untuk pada akhirnya mendapat 1 digit
 
 function kaliTerusRekursif(angka) {
-    var angkArr=angka.toString()
+  var angkArr = angka.toString();
   if (angka.toString().length === 1) {
     return Number(angka);
   } else {
-      var kali=1
+    var kali = 1;
     for (var i = 0; i <= angkArr.length - 1; i++) {
-      kali=kali*parseInt(angkArr[i])
+      kali = kali * parseInt(angkArr[i]);
     }
     return kaliTerusRekursif(kali);
   }

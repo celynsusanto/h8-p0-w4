@@ -2,33 +2,40 @@
 //Returnnya adalah kata yang punya perulangan huruf paling banyak
 //Jika kalimat tidak memiliki kata yang memiliki huruf berulang return -1
 //belum sesuai kriteria berikut `return "greatest" karena kata "greatest" memiliki 2 huruf e dan 2 huruf t`
+//jika developeeer, masih tidak sesuai. perhatikan indentasi ya
 
 function hitungPerulangan(kata) {
-    var obj = {};
-    var jumlah = 0;
-    for (i = 0; i <= kata.length - 1; i++) {
-      if (obj[kata[i]] == undefined) {
-        obj[kata[i]] = 1;
-      } else {
-        obj[kata[i]] = obj[kata[i]] + 1;
-      }
+  var obj = {};
+  var jumlah = 0;
+  for (i = 0; i <= kata.length - 1; i++) {
+    if (obj[kata[i]] == undefined) {
+      obj[kata[i]] = 1;
+    } else {
+      obj[kata[i]] = obj[kata[i]] + 1;
     }
-  
-    for (i = 0; i <= kata.length - 1; i++) {
-      if (obj[kata[i]] > 1) {
-        jumlah = jumlah + 1;
-      }
-    }
-    if (jumlah === 0) {
-      jumlah = 1;
-    }
-  
-    return jumlah;
   }
-  
-  //  console.log(hitungPerulangan('passionate')) // 4
-  //  console.log(hitungPerulangan('Today')) // 1
-  //  console.log(hitungPerulangan('developer')) // 3
+
+  for (i = 0; i <= kata.length - 1; i++) {
+    if (obj[kata[i]] > 1) {
+      jumlah = jumlah + 1;
+    }
+  }
+  // console.log(obj)
+  var keys = Object.keys(obj);
+  // console.log(keys)
+  var counter = 0;
+  for (var i = 0; i <= keys.length - 1; i++) {
+    if (obj[keys[i]] > 1) {
+      counter += 1;
+    }
+  }
+
+  return counter;
+}
+
+// console.log(hitungPerulangan("passionate")); // 4
+//  console.log(hitungPerulangan('Today')) // 1
+//  console.log(hitungPerulangan('developer')) // 3
 
 function hitungHuruf(kata) {
   var kataSplit = kata.split(" ");
@@ -36,8 +43,9 @@ function hitungHuruf(kata) {
   // console.log(kataSplit)
   for (k = 0; k <= kataSplit.length - 1; k++) {
     counter[k] = hitungPerulangan(kataSplit[k]);
+    // console.log(counter[k]);
   }
-  var max = 1;
+  var max = 0;
   var kata = "";
   for (m = 0; m <= counter.length - 1; m++) {
     if (max < counter[m]) {
@@ -66,5 +74,3 @@ console.log(hitungHuruf("mengayuh perahu di danau")); // danau
  *  loop split[i]
  *      loop split[k]
  */
-
-
